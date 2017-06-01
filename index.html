@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RNGesus</title>
+    <!-- <link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css"> -->
+    <link rel="stylesheet" href="mini-default.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm" style="text-align: center;">
+          <img src="RNGesus.png" style="max-height: 30vh;">
+          <h1>RNGesus</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm" style="text-align: center;">
+          <!-- <label for="group-number-input">group number: </label> -->
+          <!-- <input id="group-number-input" type="number" value="1" min="1"> -->
+
+          <label for="group-size-input">group size: </label>
+          <input id="group-size-input" type="number" value="1" min="1">
+
+          <input id="file-input" type="file" onchange="loadInput(this.files[0])">
+          <label for="file-input" class="button">Upload input</label>
+          
+          <input id="random-button" type="button" class="secondary large" value="RNG">
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm" style="border-right: 1px solid #c9c9c9;">
+          <h2>input</h2>
+          <ul id="input-list">
+          </ul>
+        </div>
+        <div class="col-sm">
+          <h2>output</h2>
+          <ul id="output-list">
+          </ul>
+        </div>
+      </div>
+      <div class="row" id="placeholder" style="margin-top: 5rem;">
+        <div class="col-sm col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+          <blockquote cite="Job 15:31">
+            Let him not trust in emptiness, deceiving himself; For emptiness will be his reward. 
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.0.9/chance.min.js"></script> -->
+    <script src="chance.min.js"></script>
+    <script src="rngesus.js"></script>
+  </body>
+</html>
